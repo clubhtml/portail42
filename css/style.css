@@ -1,3 +1,12 @@
+/*header{
+background:#205B2F;
+box-shadow: #205B2F 0 0 40px 50px;
+z-index:-5;
+}*/
+.clef{
+position: absolute;
+top: 10px;
+}
 .top{
 background:white;
 opacity: 70%;
@@ -17,58 +26,44 @@ text-decoration: none;
 .infos:hover{
 background: white;
 }
-.asso, .even{
- text-align: start;
-margin-top: 0px;
-text-decoration: underline;
- }
- 
- .corps{
+.corps{
  width: 100%;
  margin-top: 10px;
 display: flex;
 flex-wrap :wrap;
-flex: 2 0 auto;
-background: white;
 justify-content: space-between;
- }
- 
+}
 .bloc{
 width: 40vw;
 margin: 0 10px 20px 10px;
  }
 .liens{
+margin: 0;
+padding-left: 20px;
 display: flex;
 position: relative;
 flex-direction : column;
 }
 body{
+position: absolute;
 color : black;
 font-size: 1em;
+width: 60vw;
+margin : auto;
 }
-.liens> a{
-margin:5px 0px;
-padding:0px 10px;
+.liens> li a{
+margin:0px;
+padding-top:20px;
 color:black;
 border-collapse: separate;
-background: white;
 text-decoration: underline;
-}
-
-.liens> a :hover{
-color: blue;
-text-shadow: blue 0px 0px 5px;
-}
-.descriptif{
-position : relative;
-width: 70vw;
-background-color: pink;
 }
 h2{
 font-family: Monospace, sans-serif;
 font-weight: lighter;
 font-size: 2em;
 text-align: end;
+text-shadow: black 0px 20px 5px;
 }
 .intro{
 background: pink;
@@ -88,8 +83,9 @@ margin: auto;
 padding-top: 50px;
 width: 100vw;
 }
-.liens>a{
+.liens>a, li{
 padding : 20px 0 20px 0;
+text-decoration: none;
 }
 .even{
 margin-top: 100px;
