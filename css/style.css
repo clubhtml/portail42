@@ -2,6 +2,15 @@
 	font-family: 'Baskervvol';
 	src: url('BBBBaskervvol-Fondue.woff2') format('woff2');
 }
+#page{
+min-height:100vh;
+display:flex; 
+flex-direction:column;
+}
+
+section {
+flex-grow:1;
+}
 *{
 font-family:'Baskervvol';
 font-size: 14pt;
@@ -65,9 +74,9 @@ h2{
 font-family: Monospace, sans-serif;
 font-weight: lighter;
 font-size: 2em;
-color: #4B4B4B;
+color: #727272;
 text-align: end;
-text-shadow: #4B4B4B 0px 20px 5px;
+text-shadow: #727272 0px 20px 5px;
 }
 .intro{
 background: pink;
