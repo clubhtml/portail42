@@ -55,7 +55,7 @@ background-color: #216E2E;
 
 @media screen and (max-width: 1000px) and (min-height:1000px){
 *{
-font-size: 30pt;
+font-size: 15pt;
 }
 .flyer{
 width: 90vw;
