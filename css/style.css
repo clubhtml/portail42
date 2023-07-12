@@ -3,56 +3,37 @@
 	src: url('BBBBaskervvol-Fondue.woff2') format('woff2');
 }
 #page{
-min-height:100vh;
+min-height:200vh;
 display:flex; 
 flex-direction:column;
 }
-
+.flyer{
+width: 400px;
+}
 section {
 flex-grow:1;
+overflow:scroll;
 }
 strong{
-background-color: yellow;
+font-style:italic;
 }
-header, section, footer{
+*{
 font-family:'Baskervvol';
-font-size: 14pt;
-font-weight:bold;
+font-size: 13pt;
+font-weight: bold;
 }
 .clef{
 position: absolute;
-top: 10px;
-}
-.top{
-background:white;
-opacity: 70%;
-width:100%;
-height: 20vh;
-position: absolute;
-z-index: -1;
-top: 0;
-left: 0;
+top: 100px;
+left: 80vw;
+z-index: -10;
 }
 .infos{
-position: relative;
-background: red;
 color: black;
-text-decoration: none;
-padding-top: 10px;
 } 
 .infos:hover{
-background: white;
+cursor: help;
 }
-.corps{
-width: 40vw;
- margin-top: 10px;
-display: flex;
-flex-wrap :wrap;
-justify-content: space-between;
-}
-.bloc{
-margin: 0 10px 20px 10px;
- }
 .liens{
 margin: 0;
 padding-left: 20px;
@@ -61,66 +42,46 @@ position: relative;
 flex-direction : column;
 }
 body{
-position: absolute;
-width: 60vw;
-margin : auto;
+margin:auto;
 }
-.liens> li a{
-margin:0px;
-padding-top:20px;
-border-collapse: separate;
-text-decoration: underline;
+footer{
+padding-top: 10px;
+background-color: #216E2E;
+
 }
-h2{
-font-family: Monospace, sans-serif;
-font-weight: lighter;
-font-size: 2em;
-color: #727272;
-text-align: end;
-text-shadow: #727272 0px 20px 5px;
-}
-.intro{
-background: pink;
-}
+
+
+
+
 @media screen and (max-width: 1000px) and (min-height:1000px){
-h2{
-font-size: 100pt;
-text-shadow: #727272 0px 10px 20px;
+*{
+font-size: 30pt;
+}
+.flyer{
+width: 90vw;
+left: -100px;
 }
 .clef{
-width: 100vw;
+width: 20vw;
 top: 150px;
 }
 body{
 width: 100vw;
 }
-header{
-font-size: 50pt;
-}
-.infos + .intro{
-margin-top: 700px;
-}
-footer{
-font-size: 25pt;
-}
-section{
-font-size: 35pt;
-margin: 130px 20px 0 20px;
+.dragon{
+width: 50vw;
 }
 .corps{
-width: 100%;
+padding-top: 100px;
+width: 90vw;
 flex-direction: column;
 align-items: start;
-margin: auto;
-}
-.bloc{
-padding: 200px 50px;
 }
 .liens>a, li{
-padding : 10px;
+padding: 20px 20px 0 0;
 text-decoration: none;
 }
-.even{
-margin-top: 50px;
+section{
+padding-top: 100px;}
 }
-}
+
