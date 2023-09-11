@@ -65,8 +65,16 @@ border-top: 10px solid black;
 }
 @media screen and (max-width: 1000px) and (min-height:1000px){
 *{
-font-size: 15pt;
+font-size: 20pt;
 }
+.first, .second{
+	font-size: 30pt;
+}
+.second{
+	font-size: 34pt;
+}
+.third{
+	font-size: 25pt;}
 .flyer{
 width: 90vw;
 left: -100px;
@@ -75,23 +83,12 @@ left: -100px;
 width: 20vw;
 top: 150px;
 }
-body{
-width: 100vw;
-}
-.dragon{
-width: 50vw;
-}
-.corps{
-padding-top: 100px;
-width: 90vw;
-flex-direction: column;
-align-items: start;
+
+.bloc{
+padding: 50px;
+flex-basis: 100%;
 }
 .liens>a, li{
-padding: 20px 20px 0 0;
 text-decoration: none;
-}
-section{
-padding-top: 100px;}
 }
 
