@@ -2,17 +2,39 @@
 	font-family: 'Baskervvol';
 	src: url('BBBBaskervvol-Fondue.woff2') format('woff2');
 }
-#page{
-min-height:200vh;
-display:flex; 
-flex-direction:column;
+.first, .second{
+	font-size: 20pt;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+
+}
+.second{
+	font-size: 24pt;
+	left: 42%;
+}
+.third{
+	position: absolute;
+	font-size: 23pt;
 }
 .flyer{
 width: 400px;
 }
-section {
-flex-grow:1;
-overflow:scroll;
+.contenant {
+	position : relative;
+	top: 130vh;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.bloc{
+	line-height: 1.8;
+margin: 20px;
+margin-bottom: 300px;
+padding: 15px;
+flex-basis: 500px;
+justify-content: center;
 }
 strong{
 font-style:italic;
@@ -22,37 +44,25 @@ font-family:'Baskervvol';
 font-size: 13pt;
 font-weight: bold;
 }
-.clef{
+.entree{
 position: absolute;
-top: 100px;
+top: 400px;
 left: 80vw;
-z-index: -10;
 }
-.infos{
-color: black;
-} 
+.descriptif{
+	position: relative;
+	margin : 20px;
+	padding: 15px;
+	width: 500px;
+}
 .infos:hover{
 cursor: help;
 }
-.liens{
-margin: 0;
-padding-left: 20px;
-display: flex;
-position: relative;
-flex-direction : column;
-}
+
 body{
-margin:auto;
+margin: auto;
+border-top: 10px solid black;
 }
-footer{
-padding-top: 10px;
-background-color: #216E2E;
-
-}
-
-
-
-
 @media screen and (max-width: 1000px) and (min-height:1000px){
 *{
 font-size: 15pt;
